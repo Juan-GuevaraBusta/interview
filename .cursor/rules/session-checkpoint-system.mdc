@@ -1,0 +1,25 @@
+---
+alwaysApply: true
+---
+SESSION CHECKPOINT
+
+Antes de finalizar una sesión:
+
+1. Actualiza MASTER_STATE.md
+2. Actualiza SCORECARD.md
+3. Actualiza WEAKNESSES.md
+4. Crea SESSION_XX_[TOPIC].md
+5. Determina cuál debe ser la próxima sesión.
+6. NO continúes acumulando contexto innecesariamente.
+7. Informa al usuario:
+   
+   "SESSION CHECKPOINT READY
+   
+   Current: Session 02 — React
+   Next: Session 03 — Async
+   
+   Puedes abrir un New Chat.
+   
+   El nuevo chat solo necesita leer MASTER_STATE.md
+   y la última SESSION file."
+

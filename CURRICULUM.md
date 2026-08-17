@@ -1,0 +1,56 @@
+# GAFAM FRONTEND CURRICULUM
+
+## P0 — Critical
+
+### TypeScript
+- [ ] Types
+- [ ] Interfaces
+- [ ] Unions
+- [ ] Generics
+- [ ] Utility Types
+- [ ] Narrowing
+- [ ] unknown / any / never
+
+### React
+- [ ] JSX
+- [ ] Components
+- [ ] Props
+- [ ] State
+- [ ] Events
+- [ ] Forms
+- [ ] useState
+- [ ] useEffect
+- [ ] useMemo
+- [ ] useCallback
+- [ ] useRef
+- [ ] Context
+- [ ] Rendering
+- [ ] Reconciliation
+
+### Next.js
+- [ ] App Router
+- [ ] Layouts
+- [ ] Routing
+- [ ] Server Components
+- [ ] Client Components
+- [ ] Data Fetching
+- [ ] Caching
+- [ ] Rendering
+- [ ] Route Handlers
+
+### Async
+- [ ] Promise
+- [ ] async/await
+- [ ] Event Loop
+- [ ] Microtasks
+- [ ] Promise.all
+- [ ] Promise.allSettled
+- [ ] AbortController
+
+### Frontend Engineering
+- [ ] API integration
+- [ ] Performance
+- [ ] Testing
+- [ ] Accessibility
+- [ ] Security
+- [ ] Architecture
