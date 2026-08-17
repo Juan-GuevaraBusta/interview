@@ -6,9 +6,9 @@ Current Day: Day 1
 
 Current Session: Session 1 (in progress)
 
-Current Topic: TypeScript Fundamentals → **Types CLOSED** → Interfaces (A–F) in progress
+Current Topic: TypeScript P0 → Generics (A–F in progress)
 
-Overall Readiness: 🟡 Improving
+Overall Readiness: 🟢 Improving steadily
 
 ---
 
@@ -16,7 +16,7 @@ Overall Readiness: 🟡 Improving
 
 | Topic | Score | Status |
 |---|---:|---|
-| TypeScript | 7.75/10 | Types dominado (promedio H + Practice 2). Interfaces en curso. |
+| TypeScript | 8/10 | Types (7.75), Interfaces (8.25), Unions (7.75) |
 | React | - | Not evaluated |
 | Next.js | - | Not evaluated |
 | Async | - | Not evaluated |
@@ -29,52 +29,31 @@ Overall Readiness: 🟡 Improving
 
 ---
 
-## CURRENT WEAKNESSES
-
-- Confusión menor Q5 Practice 2 (type vs optional property wording).
-- Narrowing automático aún no natural.
-- No dominado completamente, pero suficiente para avanzar.
-
----
-
-## RECENT ACHIEVEMENTS
-
-- Types G–I pasan.
-- Practice 2: optional fields, narrowing, `in` operator.
-- Validación en borde clara.
-
----
-
 ## COMPLETED
 
-✅ **Types** — 7.75/10 avg. Ready for next.
-
----
-
-## PARTIALLY COVERED
-
-- TypeScript Fundamentals — Types: 100% (G–H–I + Practice 2).
-- TypeScript Fundamentals — Interfaces: A–F pending.
+✅ Types (7.75/10)
+✅ Interfaces (8.25/10)
+✅ Unions (7.75/10)
 
 ---
 
 ## CURRENT
 
-TypeScript Fundamentals — Interfaces (A–F teaching). No exercises this pass.
+TypeScript P0 → Generics (A–F teaching).
 
 ---
 
 ## NEXT
 
-1. Finish Interfaces A–F (30 min).
-2. React fundamentals (JSX, components, props, state). **CORE P0.**
-3. Hooks.
-4. Next.js (if time permits).
+1. Generics G–H–I.
+2. Narrowing (P0).
+3. unknown/any/never (P0).
+4. Then: React fundamentals.
 
 ---
 
 ## LAST SESSION SUMMARY
 
-Types closed: 7.75/10. Exercise H (8/10), Practice 2 (7.5/10). All concepts solid. Proceeding to Interfaces A–F, then React focus.
+Types, Interfaces, Unions completed. Strong fundamentals. Narrowing next (quick), then React.
 
 Session file: `SESSIONS/SESSION_01_TYPESCRIPT.md`
