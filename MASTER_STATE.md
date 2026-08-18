@@ -6,7 +6,7 @@ Current Day: 1 (~3h remaining — ACCELERATED)
 
 Current Session: Session 03 — Async CLOSED → **API integration**
 
-Current Topic: API integration — G pending (res.ok before json)
+Current Topic: API integration — G 8.5/10; H pending (`exercises/03-async/api-h.tsx`)
 
 Overall Readiness: 🟡 Time-boxed. Next.js SKIPPED. TS + React + Async P0 done.
 
@@ -20,14 +20,14 @@ Overall Readiness: 🟡 Time-boxed. Next.js SKIPPED. TS + React + Async P0 done.
 | React | 8.5/10 | P0 complete (Context/render G-only 8/10) |
 | Next.js | SKIP | Explicit skip |
 | Async | 8/10 | P0 complete (G 8, H 8). Abort mid-flight in mock incomplete |
-| API Integration | - | Next: G then `exercises/03-async/api-h.tsx` |
+| API Integration | - | G 8.5/10 (`res.ok` before treating body as User); H not submitted |
 | Performance / Testing / A11y / Security | - | Flash only if time |
 
 ---
 
 ## REMAINING PLAN (~3h)
 
-1. **API integration (50m)** — fetch, `res.ok`, loading/error, race, abort in useEffect, retry. Collect G, then H.
+1. **API integration (50m)** — G done. Next: `exercises/03-async/api-h.tsx` (HTTP mock, abort mid-flight, retry, LoadState).
 2. **Mini mock (50m)** — TS + React + async, no Next.
 3. **Flash (10m)** — perf / a11y / security only if leftover.
 
@@ -57,11 +57,9 @@ Mode: short A–F, G required, short H. No React extras. No Next.js. Do not re-t
 
 Read: `MASTER_STATE.md`, `CURRICULUM.md`, `SESSIONS/SESSION_02_REACT.md`.
 
-Do **not** re-teach React/TS/Async A–F. Collect API G:
+Do **not** re-teach React/TS/Async A–F. API G already 8.5/10. Evaluate H `exercises/03-async/api-h.tsx`.
 
-> `const res = await fetch('/api/user/1'); const user = await res.json();` — server returns 500. What happens, and why does `res.ok` have to run first?
-
-Then H `exercises/03-async/api-h.tsx`.
+Enforce: abort **during** delay (not only at t=0), `AbortError` ≠ UI error, HTTP !ok ≠ User.
 
 Respect candidate level: React/TS/Async not re-taught unless regression.
 
