@@ -6,7 +6,7 @@ Current Day: 1 (~5h remaining — ACCELERATED)
 
 Current Session: Session 02 — React (compressed)
 
-Current Topic: useRef + useMemo + useCallback (combined block)
+Current Topic: useRef + useMemo + useCallback (G passed; H open)
 
 Overall Readiness: 🟡 Time-boxed; Next.js SKIPPED
 
@@ -17,7 +17,7 @@ Overall Readiness: 🟡 Time-boxed; Next.js SKIPPED
 | Topic | Score | Status |
 |---|---:|---|
 | TypeScript | 8.3/10 | P0 complete |
-| React | 8.5/10 | useEffect H 8.5; memo hooks next |
+| React | 8.5/10 | useEffect 8.5; memo G 9; H pending |
 | Next.js | SKIP | Candidate choice |
 | Async | - | Next (~70m) |
 | API Integration | - | After async |
@@ -44,6 +44,6 @@ TS P0. React through useEffect (G 8, H 8.5). Forms 8.5.
 
 ## CURRENT
 
-Combined hooks block — G questions then short H.
+Memo G passed (9/10). H: `exercises/02-react/react-memo-hooks-h.tsx`.
 
 Layout: `exercises/01-typescript/` · `exercises/02-react/`
