@@ -20,14 +20,15 @@
 - [x] Forms
 - [x] useState
 - [x] useEffect
-- [ ] useMemo
-- [ ] useCallback
-- [ ] useRef
-- [ ] Context
-- [ ] Rendering
-- [ ] Reconciliation
+- [x] useMemo
+- [x] useCallback
+- [x] useRef
+- [x] Context (G only, flash)
+- [x] Rendering (G only, flash)
+- [x] Reconciliation (G only, flash)
 
 ### Next.js
+- [ ] SKIPPED (candidato, ~6h remaining). Gap consciente vs GAFAM App Router / RSC.
 - [ ] App Router
 - [ ] Layouts
 - [ ] Routing
@@ -38,19 +39,35 @@
 - [ ] Rendering
 - [ ] Route Handlers
 
-### Async
-- [ ] Promise
-- [ ] async/await
-- [ ] Event Loop
-- [ ] Microtasks
-- [ ] Promise.all
-- [ ] Promise.allSettled
-- [ ] AbortController
+### Async — Session 03
+- [x] Promise
+- [x] async/await
+- [x] Event Loop
+- [x] Microtasks
+- [x] Promise.all
+- [x] Promise.allSettled
+- [x] AbortController (G+H; mock abort mid-flight incomplete)
 
-### Frontend Engineering
-- [ ] API integration
-- [ ] Performance
-- [ ] Testing
-- [ ] Accessibility
-- [ ] Security
-- [ ] Architecture
+H entregado: `exercises/03-async/async-h.ts` (8/10)
+
+### Frontend Engineering — Session 03 continuación
+- [ ] API integration (~50 min: fetch, loading/error, race, AbortController + useEffect)
+- [ ] Mini mock (~50 min: TS + React + async, sin Next)
+- [ ] Performance — flash 10 min solo si sobra
+- [ ] Testing — flash
+- [ ] Accessibility — flash
+- [ ] Security — flash
+- [ ] Architecture — cubierto implícito (props down / events up); no bloque aparte
+
+---
+
+## Plan restante (acelerado, ~4 h)
+
+| Orden | Tiempo | Qué hacer | Cómo |
+|---|---|---|---|
+| 1 | 70 min | Async P0 (lista de arriba) | A–F corto, G, H `async-h.ts` |
+| 2 | 50 min | API integration | fetch + estados + race + abort en effect |
+| 3 | 50 min | Mini mock | 1 problema de código bajo presión |
+| 4 | 10 min | Flash perf / a11y / security | Solo si sobra |
+
+Modo: no saltar Async ni API ni mock. No Next.js. No ejercicios extra de React.
