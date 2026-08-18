@@ -6,7 +6,7 @@ Current Day: Day 1
 
 Current Session: Session 02 — React (in progress)
 
-Current Topic: React Fundamentals → JSX + Components (H)
+Current Topic: React Fundamentals → Props (H open)
 
 Overall Readiness: 🟢 Improving steadily
 
@@ -17,7 +17,7 @@ Overall Readiness: 🟢 Improving steadily
 | Topic | Score | Status |
 |---|---:|---|
 | TypeScript | 8.3/10 | P0 complete |
-| React | ~7.5/10 (G only) | JSX/Components in progress |
+| React | 8.2/10 | JSX+Components 8.5; Props not started |
 | Next.js | - | Not evaluated |
 | Async | - | Not evaluated |
 | API Integration | - | Not evaluated |
@@ -31,33 +31,34 @@ Overall Readiness: 🟢 Improving steadily
 
 ## CURRENT WEAKNESSES
 
-- Naming inconsistente (`loadingState` vs `LoadState`).
-- Precisión: `{ }` en JSX no es solo “operaciones lógicas”, son expresiones JS.
+- Naming inconsistente (`loadingState`, `className` con espacio).
+- `==` vs `===`.
 
 ---
 
 ## COMPLETED
 
-TypeScript P0 (avg 8.2). React G (JSX) passed with notes.
+TypeScript P0 (avg 8.2).
+React JSX + Components (G 7.5, H 8.5). Props G passed (~8.5); H pending.
 
 ---
 
 ## CURRENT
 
-React JSX + Components — H.
+React Props — A–F then G–H–I.
 
 ---
 
 ## NEXT
 
-1. Candidate completes `exercises/02-react/react-jsx-components-h.tsx`.
-2. Props, State, Events, Forms, Hooks (no skips).
+1. Props (no skip).
+2. State, Events, Forms, Hooks.
 
 ---
 
 ## LAST SESSION SUMMARY
 
-G JSX: compiles to createElement/VDOM; className vs reserved `class`; braces evaluate before paint. Partial on `{}` (any JS expression, not only logic). H assigned.
+JSX/Components H passed. Composition, keys, typed props. Q6a reconciliation vs index excellent. Next: Props.
 
-Layout: `exercises/01-typescript/` (Session 01, closed) · `exercises/02-react/` (Session 02).
+Layout: `exercises/01-typescript/` · `exercises/02-react/`
 Session file (TS): `SESSIONS/SESSION_01_TYPESCRIPT.md`

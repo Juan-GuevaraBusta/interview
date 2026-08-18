@@ -12,8 +12,8 @@
 - [x] unknown / any / never
 
 ### React
-- [ ] JSX
-- [ ] Components
+- [x] JSX
+- [x] Components
 - [ ] Props
 - [ ] State
 - [ ] Events
