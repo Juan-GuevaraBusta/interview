@@ -52,22 +52,15 @@ H entregado: `exercises/03-async/async-h.ts` (8/10)
 
 ### Frontend Engineering — Session 03 continuación
 - [x] API integration — G 8.5, H 8 (`exercises/03-async/api-h.tsx`; AbortError name trainer-fixed)
-- [ ] Mini mock (~50 min: TS + React + async, sin Next) — `exercises/04-mock/mini-mock.tsx`
-- [ ] Performance — flash 10 min solo si sobra
-- [ ] Testing — flash
-- [ ] Accessibility — flash
-- [ ] Security — flash
+- [x] Mini mock (~50 min: TS + React + async, sin Next) — `exercises/04-mock/mini-mock.tsx` (7/10)
+- [x] Performance — flash in `CHEATSHEET.md` (not a live block)
+- [x] Testing — flash in cheatsheet
+- [x] Accessibility — flash in cheatsheet
+- [x] Security — flash in cheatsheet
 - [ ] Architecture — cubierto implícito (props down / events up); no bloque aparte
 
 ---
 
-## Plan restante (acelerado, ~4 h)
+## Plan restante
 
-| Orden | Tiempo | Qué hacer | Cómo |
-|---|---|---|---|
-| 1 | 70 min | Async P0 (lista de arriba) | A–F corto, G, H `async-h.ts` |
-| 2 | 50 min | API integration | fetch + estados + race + abort en effect |
-| 3 | 50 min | Mini mock | 1 problema de código bajo presión |
-| 4 | 10 min | Flash perf / a11y / security | Solo si sobra |
-
-Modo: no saltar Async ni API ni mock. No Next.js. No ejercicios extra de React.
+P0 (salvo Next.js) cerrado. Flash en `CHEATSHEET.md`. Mock 02 resuelto: `exercises/04-mock/mini-mock-02-SOLVED.tsx`.

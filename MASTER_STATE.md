@@ -2,13 +2,13 @@
 
 ## CURRENT STATUS
 
-Current Day: 1 (~2h remaining — ACCELERATED)
+Current Day: 1 (P0 remaining plan **done**)
 
-Current Session: Session 03 — API CLOSED → **mini mock (50m)**
+Current Session: Session 03 CLOSED (Async + API + mock)
 
-Current Topic: Mini mock — `exercises/04-mock/mini-mock.tsx` (in progress)
+Current Topic: Self-study — `CHEATSHEET.md` + `exercises/04-mock/mini-mock-02-SOLVED.tsx`
 
-Overall Readiness: 🟡 Time-boxed. Next.js SKIPPED. TS + React + Async + API P0 done. Mock pending.
+Overall Readiness: 🟡 React + TS + async/API can pass a UI loop. Search race under pressure = 7. Next.js SKIPPED.
 
 ---
 
@@ -17,50 +17,46 @@ Overall Readiness: 🟡 Time-boxed. Next.js SKIPPED. TS + React + Async + API P0
 | Topic | Score | Status |
 |---|---:|---|
 | TypeScript | 8.3/10 | P0 complete |
-| React | 8.5/10 | P0 complete (Context/render G-only 8/10) |
+| React | 8.5/10 | P0 complete |
 | Next.js | SKIP | Explicit skip |
-| Async | 8/10 | P0 complete (G 8, H 8) |
-| API Integration | 8/10 | G 8.5; H 8 (AbortError name: trainer-fixed) |
-| Performance / Testing / A11y / Security | - | Flash only if time after mock |
+| Async | 8/10 | P0 complete |
+| API Integration | 8/10 | P0 complete |
+| Mini mock | 7/10 | Inbox works; search abort mock did not reject |
+| Performance / Testing / A11y / Security | flash | In `CHEATSHEET.md` §5 only |
 
 ---
 
-## REMAINING PLAN (~2h)
+## REMAINING PLAN
 
-1. **Mini mock (50m)** — `exercises/04-mock/mini-mock.tsx`. Interviewer mode. No hints.
-2. **Flash (10m)** — perf / a11y / security only if leftover.
+P0 time-box complete except Next.js.
 
-Mode: no React extras. No Next.js.
+Optional: App Router/RSC self-study if the company is Next-heavy.
 
 ---
 
 ## CURRENT WEAKNESSES
 
-- Validation without `return` (Events H); fixed in Forms H.
-- Verbose / chatbot-like interview answers and UI copy.
+- Verbose interview wording / UI copy.
 - Next.js = gap vs GAFAM P0.
-- `Promise<T>` vs `Promise<T[]>` (Async H — trainer fixed).
-- `new DOMException(msg)` without name `'AbortError'` (API H — trainer fixed). Catch keyed on `error.name`.
+- Abort: delay must **reject**, not only `controller.abort()` in cleanup. Mock 01 search still had this.
+- `DOMException` without `'AbortError'` (API H, trainer-fixed).
+- `T` vs `T[]` return types (Async H, trainer-fixed).
 
 ---
 
 ## COMPLETED
 
-- Session 01 TypeScript P0 (avg ~8.2)
-- Session 02 React P0 (avg ~8.5)
-- Session 03 Async P0 (avg ~8)
-- Session 03 API (G 8.5, H 8)
+- Session 01 TypeScript P0 (~8.2)
+- Session 02 React P0 (~8.5)
+- Session 03 Async + API + mock (Async 8, API 8, mock 7)
 
 ---
 
 ## HOW TO RESUME (new chat)
 
-Read: `MASTER_STATE.md`, `CURRICULUM.md`.
+Read: `MASTER_STATE.md`, `CHEATSHEET.md`, `SESSIONS/SESSION_03_ASYNC.md`.
 
-Mini mock in progress: `exercises/04-mock/mini-mock.tsx`. Interviewer mode — no hints, no implementation.
+Do not re-teach P0. Next.js still skipped unless the candidate asks.
 
-Respect candidate level: do not re-teach React/TS/Async/API unless regression.
-
-Cheatsheet: `CHEATSHEET.md`
-
-Session files: `SESSIONS/SESSION_01_TYPESCRIPT.md`, `SESSIONS/SESSION_02_REACT.md`
+Cheatsheet: `CHEATSHEET.md`  
+Solved reference: `exercises/04-mock/mini-mock-02-SOLVED.tsx`

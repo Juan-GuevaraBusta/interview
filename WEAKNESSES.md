@@ -13,8 +13,9 @@
 - Calling “bidirectional” a controlled input.
 - `key={index}` / compound keys when ids exist.
 - Function return type: `T` vs `T[]` (`loadOptionalWidgets`).
-- Abort checked only at t=0; delay/fetch in flight ignored unless `signal` is wired.
-- `new DOMException(message)` → `name` is `"Error"`, not `"AbortError"`. The catch that keys on `error.name` will treat abort as UI error.
+- Abort checked only at t=0; delay still **resolves** after `controller.abort()` unless the delay rejects.
+- `new DOMException(message)` → `name` is `"Error"`, not `"AbortError"`.
+- Mock 01: search `setTickets` after abort because `fetchTickets` ignore mid-flight abort.
 
 ## Not weaknesses (working)
 

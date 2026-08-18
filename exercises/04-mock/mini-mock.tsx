@@ -99,8 +99,8 @@ type DetailPanelProps = {
 };
 
 export function DetailPanel({ticketId}: DetailPanelProps): React.JSX.Element{
-    const [Detail, setDetail] = useState<TicketDetail | null> (null);
-    const [error, setError] = useState<Error | null> (null);
+    const [detail, setDetail] = useState<TicketDetail | null> (null);
+    const [error, setError] = useState<string | null> (null);
     const[isLoading, setIsLoading] = useState(false);
     const [retryNonce, setRetryNonce] = useState(0);
 
@@ -246,7 +246,7 @@ export function DetailPanel({ticketId}: DetailPanelProps): React.JSX.Element{
     
           <section className="inbox-inspection-sidebar">
             {selectedTicketId ? (
-              <TicketDetailPanel key={selectedTicketId} ticketId={selectedTicketId} />
+              <DetailPanel key={selectedTicketId} ticketId={selectedTicketId} />
             ) : (
               <div className="empty-panel-placeholder">
                 <p>Select an inventory defect marker row to evaluate system telemetry payload strings.</p>
