@@ -7,7 +7,7 @@
 - [x] Interfaces
 - [x] Unions
 - [x] Generics
-- [ ] Utility Types
+- [x] Utility Types
 - [x] Narrowing
 - [ ] unknown / any / never
 

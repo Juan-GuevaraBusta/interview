@@ -6,7 +6,7 @@ Current Day: Day 1
 
 Current Session: Session 1 (in progress)
 
-Current Topic: TypeScript P0 → Utility Types (A–F)
+Current Topic: TypeScript P0 → unknown / any / never (A–F)
 
 Overall Readiness: 🟢 Improving steadily
 
@@ -16,7 +16,7 @@ Overall Readiness: 🟢 Improving steadily
 
 | Topic | Score | Status |
 |---|---:|---|
-| TypeScript | 8.2/10 | Types 7.75, Interfaces 8.25, Unions 7.75, Generics 8.75, Narrowing 8.5 |
+| TypeScript | 8.3/10 | Types–Narrowing done; Utility Types 8.25; unknown/any/never pending |
 | React | - | Not evaluated |
 | Next.js | - | Not evaluated |
 | Async | - | Not evaluated |
@@ -31,16 +31,8 @@ Overall Readiness: 🟢 Improving steadily
 
 ## CURRENT WEAKNESSES
 
-- Naming inconsistente (`formInput` vs `FormInput`).
-- Q4a narrowing: atribuyó crash a string vacío; `"".toUpperCase()` no tira. El crash es `undefined`/`null`.
-- Primera pasada Types: compile-time vs runtime (ya corregida).
-
----
-
-## RECENT MISTAKES
-
-- Narrowing H: `input != null` invertido → tipo `never`.
-- Q4a: ejemplo de fallo runtime impreciso (empty string vs missing property).
+- Q4a Utility Types: confundió `authorId` con `id` (ownership vs identity).
+- Naming inconsistente en tipos (`formInput` vs `FormInput`).
 
 ---
 
@@ -51,25 +43,25 @@ Overall Readiness: 🟢 Improving steadily
 ✅ Unions (7.75/10)
 ✅ Generics (8.75/10)
 ✅ Narrowing (8.5/10)
+✅ Utility Types (8.25/10)
 
 ---
 
 ## CURRENT
 
-TypeScript P0 → Utility Types (A–F teaching). Then H.
+TypeScript P0 → unknown / any / never (last TS topic before React).
 
 ---
 
 ## NEXT
 
-1. Utility Types G–H–I.
-2. unknown / any / never (P0).
-3. React fundamentals.
+1. unknown / any / never G–H–I.
+2. React fundamentals (JSX, Components, Props, State).
 
 ---
 
 ## LAST SESSION SUMMARY
 
-Narrowing closed 8.5/10. Type predicate `isRecord` + `typeof` guards. Q4 mostly correct; empty-string crash example was wrong. Next: Utility Types (skipped earlier; user requested no skips).
+Utility Types H passed 8/10. DTOs correct with Omit/Pick/Partial/Readonly. Q4b strong (immutability). Q4a mixed up authorId rationale. Next: unknown/any/never.
 
 Session file: `SESSIONS/SESSION_01_TYPESCRIPT.md`
