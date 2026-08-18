@@ -17,9 +17,9 @@
 - [x] Props
 - [x] State
 - [x] Events
-- [ ] Forms
+- [x] Forms
 - [x] useState
-- [ ] useEffect
+- [x] useEffect
 - [ ] useMemo
 - [ ] useCallback
 - [ ] useRef
