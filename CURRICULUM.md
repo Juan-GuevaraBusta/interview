@@ -3,12 +3,12 @@
 ## P0 — Critical
 
 ### TypeScript
-- [ ] Types
-- [ ] Interfaces
-- [ ] Unions
-- [ ] Generics
+- [x] Types
+- [x] Interfaces
+- [x] Unions
+- [x] Generics
 - [ ] Utility Types
-- [ ] Narrowing
+- [x] Narrowing
 - [ ] unknown / any / never
 
 ### React
