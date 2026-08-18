@@ -9,7 +9,7 @@
 - [x] Generics
 - [x] Utility Types
 - [x] Narrowing
-- [ ] unknown / any / never
+- [x] unknown / any / never
 
 ### React
 - [ ] JSX

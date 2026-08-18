@@ -4,9 +4,9 @@
 
 Current Day: Day 1
 
-Current Session: Session 1 (in progress)
+Current Session: Session 02 — React (in progress)
 
-Current Topic: TypeScript P0 → unknown / any / never (A–F)
+Current Topic: React Fundamentals → JSX + Components (H)
 
 Overall Readiness: 🟢 Improving steadily
 
@@ -16,8 +16,8 @@ Overall Readiness: 🟢 Improving steadily
 
 | Topic | Score | Status |
 |---|---:|---|
-| TypeScript | 8.3/10 | Types–Narrowing done; Utility Types 8.25; unknown/any/never pending |
-| React | - | Not evaluated |
+| TypeScript | 8.3/10 | P0 complete |
+| React | ~7.5/10 (G only) | JSX/Components in progress |
 | Next.js | - | Not evaluated |
 | Async | - | Not evaluated |
 | API Integration | - | Not evaluated |
@@ -31,37 +31,33 @@ Overall Readiness: 🟢 Improving steadily
 
 ## CURRENT WEAKNESSES
 
-- Q4a Utility Types: confundió `authorId` con `id` (ownership vs identity).
-- Naming inconsistente en tipos (`formInput` vs `FormInput`).
+- Naming inconsistente (`loadingState` vs `LoadState`).
+- Precisión: `{ }` en JSX no es solo “operaciones lógicas”, son expresiones JS.
 
 ---
 
 ## COMPLETED
 
-✅ Types (7.75/10)
-✅ Interfaces (8.25/10)
-✅ Unions (7.75/10)
-✅ Generics (8.75/10)
-✅ Narrowing (8.5/10)
-✅ Utility Types (8.25/10)
+TypeScript P0 (avg 8.2). React G (JSX) passed with notes.
 
 ---
 
 ## CURRENT
 
-TypeScript P0 → unknown / any / never (last TS topic before React).
+React JSX + Components — H.
 
 ---
 
 ## NEXT
 
-1. unknown / any / never G–H–I.
-2. React fundamentals (JSX, Components, Props, State).
+1. Candidate completes `exercises/02-react/react-jsx-components-h.tsx`.
+2. Props, State, Events, Forms, Hooks (no skips).
 
 ---
 
 ## LAST SESSION SUMMARY
 
-Utility Types H passed 8/10. DTOs correct with Omit/Pick/Partial/Readonly. Q4b strong (immutability). Q4a mixed up authorId rationale. Next: unknown/any/never.
+G JSX: compiles to createElement/VDOM; className vs reserved `class`; braces evaluate before paint. Partial on `{}` (any JS expression, not only logic). H assigned.
 
-Session file: `SESSIONS/SESSION_01_TYPESCRIPT.md`
+Layout: `exercises/01-typescript/` (Session 01, closed) · `exercises/02-react/` (Session 02).
+Session file (TS): `SESSIONS/SESSION_01_TYPESCRIPT.md`

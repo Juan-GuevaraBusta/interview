@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-17  
 **Day:** 1  
-**Status:** In progress (TypeScript P0: Utility Types next)  
+**Status:** TypeScript P0 closed (exercises moved to `exercises/01-typescript/`)  
 **Readiness after session:** 🟡 Improving
 
 ---
@@ -56,8 +56,13 @@ Enseñanza A–F completada:
 
 ## Ejercicios / código
 
-- `exercises/session-01/types-h.ts` — H entregado y pasado (8/10).
-- `exercises/session-01/types-practice-2.ts` — Refuerzo: optional fields, validation, narrowing (en progreso).
+Carpeta: `exercises/01-typescript/`
+
+- `types-h.ts`, `types-practice-2.ts`
+- `interfaces-h.ts`, `unions-h.ts`, `generics-h.ts`
+- `narrowing-h.ts`, `utility-types-h.ts`, `unknown-any-never-h.ts`
+
+React: `exercises/02-react/` (Session 02, no esta sesión).
 
 ---
 
