@@ -14,11 +14,11 @@
 ### React
 - [x] JSX
 - [x] Components
-- [ ] Props
-- [ ] State
+- [x] Props
+- [x] State
 - [ ] Events
 - [ ] Forms
-- [ ] useState
+- [x] useState
 - [ ] useEffect
 - [ ] useMemo
 - [ ] useCallback

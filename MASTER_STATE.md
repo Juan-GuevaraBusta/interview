@@ -6,7 +6,7 @@ Current Day: Day 1
 
 Current Session: Session 02 — React (in progress)
 
-Current Topic: React Fundamentals → Props (H open)
+Current Topic: React Fundamentals → Events (A–F; H open)
 
 Overall Readiness: 🟢 Improving steadily
 
@@ -17,7 +17,7 @@ Overall Readiness: 🟢 Improving steadily
 | Topic | Score | Status |
 |---|---:|---|
 | TypeScript | 8.3/10 | P0 complete |
-| React | 8.2/10 | JSX+Components 8.5; Props not started |
+| React | 8.4/10 | JSX 8.5; Props 8.25; State 8.75 |
 | Next.js | - | Not evaluated |
 | Async | - | Not evaluated |
 | API Integration | - | Not evaluated |
@@ -31,34 +31,34 @@ Overall Readiness: 🟢 Improving steadily
 
 ## CURRENT WEAKNESSES
 
-- Naming inconsistente (`loadingState`, `className` con espacio).
-- `==` vs `===`.
+- Comentario “enlace bidireccional” en input controlado (sigue siendo unidireccional).
+- className literal vs variable (Props H).
 
 ---
 
 ## COMPLETED
 
 TypeScript P0 (avg 8.2).
-React JSX + Components (G 7.5, H 8.5). Props G passed (~8.5); H pending.
+React: JSX+Components, Props, State+useState.
 
 ---
 
 ## CURRENT
 
-React Props — A–F then G–H–I.
+React Events — pending A–F.
 
 ---
 
 ## NEXT
 
-1. Props (no skip).
-2. State, Events, Forms, Hooks.
+1. Events (no skip).
+2. Forms, remaining Hooks.
 
 ---
 
 ## LAST SESSION SUMMARY
 
-JSX/Components H passed. Composition, keys, typed props. Q6a reconciliation vs index excellent. Next: Props.
+State H passed 9/10. Controlled input, updater functions, Display as pure child. Q5b batching vs functional updates excellent. Next: Events.
 
 Layout: `exercises/01-typescript/` · `exercises/02-react/`
 Session file (TS): `SESSIONS/SESSION_01_TYPESCRIPT.md`

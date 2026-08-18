@@ -58,7 +58,7 @@ export function Avatar({name, size = 'md'}: AvatarProps): React.JSX.Element{
     const avatarClassName = `avatar avatar-${size}`
 
     return(
-        <div className = "avatarClassName">
+        <div className = {avatarClassName}>
             <span className = "avatar-text">{initial}</span>
         </div>
     );
@@ -125,3 +125,24 @@ export function Toolbar() : React.JSX.Element{
         </nav>
       );
 }
+
+/*
+a) Porque UserChip es un componente de UI puramente presentacional. El chip no
+tiene el contexto ni el alcance para saber si su selección debe mutar
+el estado global de una aplicación, abrir un modal de confirmación o
+disparar un fetch a una API. Al delegar el callback al Padre mediante
+onSelect, mantienes el flujo unidireccional de datos (Data flows down,
+events flow up).
+
+b) ¿Qué pasa si haces user.role = 'admin' dentro de Avatar? 
+¿Por qué está mal aunque TypeScript a veces no lo evite si User no es readonly?
+Si haces esa mutación directa, estarás rompiendo el principio fundamental de
+inmutabilidad de React. Aunque el JavaScript del navegador lo ejecute
+(y TypeScript no proteste si olvidaste marcar el objeto como readonly),
+estás alterando la referencia original del dato por detrás del ciclo de 
+vida de React. Esto produce desincronizaciones críticas: React no sabrá 
+que el dato cambió porque no se utilizó un despachador de estado (useState),
+impidiendo que el motor ejecute un re-render de la UI. Como resultado, la
+interfaz mostrará información vieja o corrupta, rompiendo la predictibilidad 
+del flujo de renderizado y dificultando severamente el rastreo de bugs.
+*/
