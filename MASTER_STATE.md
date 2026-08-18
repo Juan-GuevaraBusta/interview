@@ -6,7 +6,7 @@ Current Day: Day 1
 
 Current Session: Session 02 — React (in progress)
 
-Current Topic: React Fundamentals → Events (A–F; H open)
+Current Topic: React Fundamentals → Events (H open)
 
 Overall Readiness: 🟢 Improving steadily
 
@@ -39,7 +39,7 @@ Overall Readiness: 🟢 Improving steadily
 ## COMPLETED
 
 TypeScript P0 (avg 8.2).
-React: JSX+Components, Props, State+useState.
+React: JSX+Components, Props, State+useState. Events G passed (~8.5); H pending.
 
 ---
 
