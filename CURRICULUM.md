@@ -16,7 +16,7 @@
 - [x] Components
 - [x] Props
 - [x] State
-- [ ] Events
+- [x] Events
 - [ ] Forms
 - [x] useState
 - [ ] useEffect

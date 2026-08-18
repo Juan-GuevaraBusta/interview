@@ -12,17 +12,17 @@
 //
 // Cuando termines, pega el código + justificación en el chat para evaluación.
 
-interface Student {
+export interface Student {
     id: number;
     nombre: string;
     progress: number;
 }
 
-function formatProgress(student: Student): string {
+export function formatProgress(student: Student): string {
     return `${student.nombre} is ${student.progress}% complete`;
 }
 
-function loadStudent(json: unknown): Student {
+export function loadStudent(json: unknown): Student {
     if(typeof json !== 'object' || json === null) {
         throw new Error('Invalid JSON');
     }

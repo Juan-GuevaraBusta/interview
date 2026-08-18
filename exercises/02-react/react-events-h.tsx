@@ -139,3 +139,30 @@ export function BugTracker(): React.JSX.Element {
       </main>
     );
   }
+
+/*
+a)Por qué e.preventDefault() en onSubmit del form? 
+Porque por defecto, los navegadores web manejan el evento submit de un 
+<form> recargando la página completa e intentando enviar los campos 
+como parámetros por URL o mediante una petición HTTP POST cruda. En una 
+Single Page Application (SPA) basada en React, este comportamiento nativo 
+rompería la aplicación por completo al destruir todo el estado que reside en 
+memoria (useState, contextos, cachés de API). Ejecutar e.preventDefault() le 
+indica al navegador que cancele su comportamiento heredado para permitir que 
+nuestro código de JavaScript tome el control total del procesamiento de los 
+datos de manera asíncrona y fluida sin parpadeos de pantalla.
+
+b) ¿Qué diferencia hay entre onClick en un <div> y type="submit" en un form, 
+respecto a Enter en el input?
+La diferencia es crítica para la accesibilidad (a11y) y semántica nativa.
+Al utilizar un <form> con un botón de type="submit", el navegador asocia 
+implícitamente todos los inputs internos con el desencadenador del formulario. 
+Si el usuario presiona la tecla Enter estando enfocado en cualquier input de 
+texto, el navegador dispara automáticamente el evento onSubmit de forma nativa.
+Si reemplazas esto por un simple <div> con un listener onClick, pierdes por 
+completo esa automatización integrada. Para lograr que la tecla Enter funcione, 
+te verías obligado a inyectar manejadores de teclado manuales (onKeyDown) en 
+cada uno de los inputs para interceptar la tecla e imitar el submit. Además, 
+dejas desamparados a los usuarios de lectores de pantalla que navegan mediante 
+comandos semánticos estándar del navegador.
+*/
