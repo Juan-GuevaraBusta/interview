@@ -2,13 +2,13 @@
 
 ## CURRENT STATUS
 
-Current Day: 1 (~3h remaining — ACCELERATED)
+Current Day: 1 (~2h remaining — ACCELERATED)
 
-Current Session: Session 03 — Async CLOSED → **API integration**
+Current Session: Session 03 — API CLOSED → **mini mock (50m)**
 
-Current Topic: API integration — G 8.5/10; H pending (`exercises/03-async/api-h.tsx`)
+Current Topic: Mini mock — `exercises/04-mock/mini-mock.tsx` (in progress)
 
-Overall Readiness: 🟡 Time-boxed. Next.js SKIPPED. TS + React + Async P0 done.
+Overall Readiness: 🟡 Time-boxed. Next.js SKIPPED. TS + React + Async + API P0 done. Mock pending.
 
 ---
 
@@ -19,29 +19,28 @@ Overall Readiness: 🟡 Time-boxed. Next.js SKIPPED. TS + React + Async P0 done.
 | TypeScript | 8.3/10 | P0 complete |
 | React | 8.5/10 | P0 complete (Context/render G-only 8/10) |
 | Next.js | SKIP | Explicit skip |
-| Async | 8/10 | P0 complete (G 8, H 8). Abort mid-flight in mock incomplete |
-| API Integration | - | G 8.5/10 (`res.ok` before treating body as User); H not submitted |
-| Performance / Testing / A11y / Security | - | Flash only if time |
+| Async | 8/10 | P0 complete (G 8, H 8) |
+| API Integration | 8/10 | G 8.5; H 8 (AbortError name: trainer-fixed) |
+| Performance / Testing / A11y / Security | - | Flash only if time after mock |
 
 ---
 
-## REMAINING PLAN (~3h)
+## REMAINING PLAN (~2h)
 
-1. **API integration (50m)** — G done. Next: `exercises/03-async/api-h.tsx` (HTTP mock, abort mid-flight, retry, LoadState).
-2. **Mini mock (50m)** — TS + React + async, no Next.
-3. **Flash (10m)** — perf / a11y / security only if leftover.
+1. **Mini mock (50m)** — `exercises/04-mock/mini-mock.tsx`. Interviewer mode. No hints.
+2. **Flash (10m)** — perf / a11y / security only if leftover.
 
-Mode: short A–F, G required, short H. No React extras. No Next.js. Do not re-teach AbortController from scratch — they have it from useEffect H; enforce mid-flight abort + HTTP.
+Mode: no React extras. No Next.js.
 
 ---
 
 ## CURRENT WEAKNESSES
 
 - Validation without `return` (Events H); fixed in Forms H.
-- Verbose / chatbot-like interview answers (Forms G). a/b in Async H still a bit long.
+- Verbose / chatbot-like interview answers and UI copy.
 - Next.js = gap vs GAFAM P0.
 - `Promise<T>` vs `Promise<T[]>` (Async H — trainer fixed).
-- Abort sampled only at start of mock delay (Async H). Race/unmount pattern is known from useEffect.
+- `new DOMException(msg)` without name `'AbortError'` (API H — trainer fixed). Catch keyed on `error.name`.
 
 ---
 
@@ -50,19 +49,18 @@ Mode: short A–F, G required, short H. No React extras. No Next.js. Do not re-t
 - Session 01 TypeScript P0 (avg ~8.2)
 - Session 02 React P0 (avg ~8.5)
 - Session 03 Async P0 (avg ~8)
+- Session 03 API (G 8.5, H 8)
 
 ---
 
 ## HOW TO RESUME (new chat)
 
-Read: `MASTER_STATE.md`, `CURRICULUM.md`, `SESSIONS/SESSION_02_REACT.md`.
+Read: `MASTER_STATE.md`, `CURRICULUM.md`.
 
-Do **not** re-teach React/TS/Async A–F. API G already 8.5/10. Evaluate H `exercises/03-async/api-h.tsx`.
+Mini mock in progress: `exercises/04-mock/mini-mock.tsx`. Interviewer mode — no hints, no implementation.
 
-Enforce: abort **during** delay (not only at t=0), `AbortError` ≠ UI error, HTTP !ok ≠ User.
+Respect candidate level: do not re-teach React/TS/Async/API unless regression.
 
-Respect candidate level: React/TS/Async not re-taught unless regression.
-
-Cheatsheet entrevista: `CHEATSHEET.md`
+Cheatsheet: `CHEATSHEET.md`
 
 Session files: `SESSIONS/SESSION_01_TYPESCRIPT.md`, `SESSIONS/SESSION_02_REACT.md`

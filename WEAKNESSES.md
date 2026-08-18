@@ -14,6 +14,7 @@
 - `key={index}` / compound keys when ids exist.
 - Function return type: `T` vs `T[]` (`loadOptionalWidgets`).
 - Abort checked only at t=0; delay/fetch in flight ignored unless `signal` is wired.
+- `new DOMException(message)` → `name` is `"Error"`, not `"AbortError"`. The catch that keys on `error.name` will treat abort as UI error.
 
 ## Not weaknesses (working)
 

@@ -51,8 +51,8 @@
 H entregado: `exercises/03-async/async-h.ts` (8/10)
 
 ### Frontend Engineering — Session 03 continuación
-- [ ] API integration (~50 min: fetch, loading/error, race, AbortController + useEffect)
-- [ ] Mini mock (~50 min: TS + React + async, sin Next)
+- [x] API integration — G 8.5, H 8 (`exercises/03-async/api-h.tsx`; AbortError name trainer-fixed)
+- [ ] Mini mock (~50 min: TS + React + async, sin Next) — `exercises/04-mock/mini-mock.tsx`
 - [ ] Performance — flash 10 min solo si sobra
 - [ ] Testing — flash
 - [ ] Accessibility — flash

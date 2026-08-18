@@ -55,14 +55,14 @@ export type UserPanelProps ={
 
 export async function fetchUser(id: string, signal: AbortSignal): Promise<User>{
     if(signal.aborted){
-        throw signal.reason || new DOMException('Abort error')
+        throw signal.reason || new DOMException('Abort error', 'AbortError')
     }
 
     await new Promise((resolve, reject) => {
         const timeoutId = setTimeout(resolve, 150);
         signal.addEventListener('abort', () => {
             clearTimeout(timeoutId)
-            reject(new DOMException('User aborted request'))
+            reject(new DOMException('User aborted request', 'AbortError'))
         });
     });
 
